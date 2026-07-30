@@ -57,7 +57,19 @@ const voiceCatalogSchema = z.object({
   fetchedAt: z.string(),
 });
 
-const quoteOutputSchema = z.object({
+const paymentRequirementSchema = z
+  .object({
+    scheme: z.string(),
+    network: z.string(),
+    amount: z.string(),
+    asset: z.string(),
+    payTo: z.string(),
+    maxTimeoutSeconds: z.number(),
+    extra: z.record(z.string(), z.unknown()).optional(),
+  })
+  .passthrough();
+
+export const quoteOutputSchema = z.object({
   quoteId: z.string(),
   quoteToken: z.string(),
   characters: z.number(),
@@ -72,7 +84,7 @@ const quoteOutputSchema = z.object({
   payTo: z.string(),
   expiresAt: z.string(),
   paymentRequired: z.string(),
-  selectedRequirement: z.record(z.string(), z.unknown()),
+  selectedRequirement: paymentRequirementSchema,
   policy: z.object({
     allowed: z.literal(true),
     approvalRequired: z.boolean(),
