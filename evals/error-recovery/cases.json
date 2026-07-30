@@ -1,0 +1,12 @@
+[
+  {
+    "error": "PAYMENT_OUTCOME_UNKNOWN",
+    "mustNot": ["retry_payment", "create_new_authorization"],
+    "must": ["inspect_settlement", "inform_user"]
+  },
+  {
+    "error": "INVALID_VOICE",
+    "must": ["tts_list_voices"]
+  }
+]
+

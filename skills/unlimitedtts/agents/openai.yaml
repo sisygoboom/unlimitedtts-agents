@@ -1,0 +1,4 @@
+interface:
+  display_name: "UnlimitedTTS"
+  short_description: "Create wallet-paid speech and MP3 audio"
+  default_prompt: "Use $unlimitedtts to narrate this text as an MP3 with a voice I choose."

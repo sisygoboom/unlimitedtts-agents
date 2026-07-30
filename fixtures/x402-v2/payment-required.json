@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "error": "Payment required",
+  "resource": {
+    "url": "https://api.unlimitedtts.com/x402/tts",
+    "description": "Unlimited TTS synthesis paid per request with x402",
+    "mimeType": "audio/mpeg",
+    "serviceName": "Unlimited TTS",
+    "tags": [
+      "tts",
+      "x402",
+      "usdc",
+      "ai-agent"
+    ]
+  },
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "amount": "72",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0x88E7960011C59BeE0088650CA52d7519B00381C8",
+      "maxTimeoutSeconds": 60,
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.unlimitedtts/tts",
+  "title": "UnlimitedTTS",
+  "description": "Quote-first, non-custodial x402 text-to-speech with spend policy, MP3 artifacts, and receipts.",
+  "repository": {
+    "url": "https://github.com/sisygoboom/unlimitedtts-agents",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@unlimitedtts/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "UNLIMITEDTTS_ENVIRONMENT",
+          "description": "Runtime environment. Defaults to production; staging explicitly selects the staging API and Base Sepolia pins.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "production"
+        },
+        {
+          "name": "UNLIMITEDTTS_MAX_USDC_PER_CALL",
+          "description": "Maximum authorized USDC amount for one synthesis.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "0.10"
+        },
+        {
+          "name": "UNLIMITEDTTS_ROLLING_24H_USDC",
+          "description": "Maximum committed, unknown, and reserved spend in a rolling 24-hour window.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "1.00"
+        },
+        {
+          "name": "UNLIMITEDTTS_OUTPUT_DIRECTORY",
+          "description": "Absolute approved directory for private MP3 artifacts and sanitized receipts.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

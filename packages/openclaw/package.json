@@ -1,0 +1,44 @@
+{
+  "name": "@unlimitedtts/openclaw",
+  "version": "0.1.0",
+  "description": "UnlimitedTTS MCP server and skill bundle for OpenClaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sisygoboom/unlimitedtts-agents.git",
+    "directory": "packages/openclaw"
+  },
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "skills",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod 755 dist/mcp.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "@unlimitedtts/mcp": "workspace:*"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.7.0"
+    },
+    "install": {
+      "minHostVersion": ">=2026.7.0",
+      "clawhubSpec": "@unlimitedtts/openclaw",
+      "npmSpec": "@unlimitedtts/openclaw@0.1.0",
+      "defaultChoice": "clawhub"
+    }
+  }
+}

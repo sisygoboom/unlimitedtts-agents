@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true,
+    "tsBuildInfoFile": "../../node_modules/.cache/unlimitedtts/openclaw.tsbuildinfo"
+  },
+  "references": [
+    { "path": "../mcp" }
+  ],
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "prompt": "Read this launch note aloud in Nova.",
+    "mustUse": ["tts_quote", "tts_synthesize"],
+    "mustSelectVoice": "openai_nova"
+  },
+  {
+    "prompt": "What voices can make an MP3?",
+    "mustUse": ["tts_list_voices"],
+    "mustNotUse": ["tts_synthesize"]
+  }
+]
+

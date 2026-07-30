@@ -1,0 +1,40 @@
+{
+  "name": "@unlimitedtts/mcp",
+  "version": "0.1.0",
+  "description": "Non-custodial x402 text-to-speech MCP server for UnlimitedTTS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sisygoboom/unlimitedtts-agents.git",
+    "directory": "packages/mcp"
+  },
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "unlimitedtts-mcp": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod 755 dist/cli.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "@unlimitedtts/core": "workspace:*",
+    "zod": "4.4.3"
+  },
+  "mcpName": "com.unlimitedtts/tts"
+}

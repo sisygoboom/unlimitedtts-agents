@@ -1,0 +1,33 @@
+{
+  "name": "@unlimitedtts/wallet-adapters",
+  "version": "0.1.0",
+  "description": "Signer adapter contracts for UnlimitedTTS x402 payments",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sisygoboom/unlimitedtts-agents.git",
+    "directory": "packages/wallet-adapters"
+  },
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@unlimitedtts/core": "workspace:*"
+  }
+}
