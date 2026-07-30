@@ -1,6 +1,6 @@
 {
   "name": "@unlimitedtts/openclaw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UnlimitedTTS MCP server and skill bundle for OpenClaw",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   },
   "dependencies": {},
   "bundledDependencies": [
-    "@unlimitedtts/mcp", 
+    "@unlimitedtts/mcp",
     "@unlimitedtts/core"
   ],
   "openclaw": {
