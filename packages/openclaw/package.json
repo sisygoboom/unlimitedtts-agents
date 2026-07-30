@@ -27,10 +27,6 @@
     "@modelcontextprotocol/server": "2.0.0",
     "@unlimitedtts/mcp": "workspace:*"
   },
-  "bundledDependencies": [
-    "@unlimitedtts/mcp",
-    "@unlimitedtts/core"
-  ],
   "openclaw": {
     "extensions": [
       "./dist/index.js"
