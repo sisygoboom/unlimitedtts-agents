@@ -23,7 +23,10 @@
     "build": "tsc -p tsconfig.json && chmod 755 dist/mcp.js",
     "clean": "rm -rf dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "@unlimitedtts/mcp": "workspace:*"
+  },
   "bundledDependencies": [
     "@unlimitedtts/mcp",
     "@unlimitedtts/core"

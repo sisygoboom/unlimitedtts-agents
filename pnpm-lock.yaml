@@ -36,7 +36,14 @@ importers:
         specifier: 4.4.3
         version: 4.4.3
 
-  packages/openclaw: {}
+  packages/openclaw:
+    dependencies:
+      '@modelcontextprotocol/server':
+        specifier: 2.0.0
+        version: 2.0.0
+      '@unlimitedtts/mcp':
+        specifier: workspace:*
+        version: link:../mcp
 
   packages/wallet-adapters:
     dependencies:
