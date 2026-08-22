@@ -36,5 +36,5 @@
     "@unlimitedtts/core": "workspace:*",
     "zod": "4.4.3"
   },
-  "mcpName": "io.github.sisygoboom/unlimitedtts-mcp"
+  "mcpName": "com.unlimitedtts/tts"
 }

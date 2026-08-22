@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.sisygoboom/unlimitedtts-mcp",
+  "name": "com.unlimitedtts/tts",
   "title": "UnlimitedTTS",
   "description": "Quote-first, non-custodial x402 text-to-speech with spend policy, MP3 artifacts, and receipts.",
   "repository": {

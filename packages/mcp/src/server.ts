@@ -146,7 +146,7 @@ export function createUnlimitedTtsMcpServer(
   const service = options.service ?? new UnlimitedTtsService(config);
   const server = new McpServer(
     {
-      name: "io.github.sisygoboom/unlimitedtts-mcp",
+      name: "com.unlimitedtts/tts",
       version: "0.1.0",
     },
     {
