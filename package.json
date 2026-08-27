@@ -20,7 +20,7 @@
     "clean": "pnpm --recursive --if-present run clean"
   },
   "devDependencies": {
-    "@types/node": "26.1.2",
+    "@types/node": "26.3.0",
     "typescript": "7.0.2",
     "vitest": "4.1.10"
   }
